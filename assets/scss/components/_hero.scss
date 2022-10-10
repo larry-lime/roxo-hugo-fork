@@ -1,4 +1,19 @@
-.site-hero{
+.bg-image {
+  /* The image used */
+
+  /* Add the blur effect */
+  // filter: blur(8px);
+  // -webkit-filter: blur(8px);
+  //
+  // /* Full height */
+  // height: 100%;
+  //
+  // /* Center and scale the image nicely */
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+.site-hero {
   position: relative;
   height: 100vh;
   background-size: cover;
@@ -6,31 +21,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include desktop{
+  @include desktop {
     height: auto;
     padding: 200px 0;
   }
-  @include mobile{
+  @include mobile {
     padding: 150px 0;
   }
-  &-content{
-    h1{
+  &-content {
+    h1 {
       // margin-bottom: 75px;
       color: $white;
       background: rgba($color: $primary-color, $alpha: 0.85);
       padding-top: 15px;
       padding-bottom: 5px;
       margin-bottom: 0px;
-      @include desktop-lg{
+      @include desktop-lg {
         font-weight: 450;
         font-size: 50px;
       }
-      @include mobile{
+      @include mobile {
         font-weight: 450;
         font-size: 30px;
       }
     }
-    h6{
+    h6 {
       margin-top: 0px;
       margin-bottom: 75px;
       color: $white;
@@ -39,34 +54,34 @@
       padding-top: 10px;
       padding-left: 10px;
       padding-right: 10px;
-      @include desktop-lg{
+      @include desktop-lg {
         font-weight: 450;
         font-size: 15px;
         margin-bottom: 30px;
       }
-      @include mobile{
+      @include mobile {
         font-size: 15px;
         margin-bottom: 30px;
       }
     }
-    &-buttons{
+    &-buttons {
       margin: 0;
       padding: 0;
-      li{
+      li {
         display: inline-block;
-        @include mobile{
+        @include mobile {
           display: block;
         }
-        &:not(:last-child){
+        &:not(:last-child) {
           margin-right: 30px;
-          @include mobile{
+          @include mobile {
             margin-right: 0;
             margin-bottom: 20px;
           }
         }
-        .btn{
+        .btn {
           font-weight: 600;
-          @include mobile{
+          @include mobile {
             width: 90%;
             margin: 0 auto;
             display: block;
@@ -75,9 +90,10 @@
       }
     }
   }
-  &-scroll{
+  &-scroll {
     position: absolute;
-    left: 50%; bottom: 70px;
+    left: 50%;
+    bottom: 70px;
     transform: translateX(-50%);
   }
 }
